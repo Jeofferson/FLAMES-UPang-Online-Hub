@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1057980376112",
+    "firebase_url": "https://onclas-9415f.firebaseio.com",
+    "project_id": "onclas-9415f",
+    "storage_bucket": "onclas-9415f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057980376112:android:2024b6f80ddfbff7",
+        "android_client_info": {
+          "package_name": "com.jeofferson.onclas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057980376112-7pi6ac2gfnc4gl3725pt3qhhcscaqhpr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jeofferson.onclas",
+            "certificate_hash": "4b12de041c9654137c59ac6abf56ddbf5f126fab"
+          }
+        },
+        {
+          "client_id": "1057980376112-bl8prag63ecgl13oc51k6gegqe2ahd50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSi-i768g0N-4G9AAYVSZPSckvBzf2eQY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057980376112-bl8prag63ecgl13oc51k6gegqe2ahd50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

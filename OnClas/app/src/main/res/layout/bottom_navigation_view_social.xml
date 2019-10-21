@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkThemeSurface"
+    android:orientation="vertical"
+    tools:context=".PackageBottomNavigationItems.Social">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_gravity="center_vertical"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+                android:id="@+id/socialSpinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:layout_gravity="center_vertical"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                android:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+                android:id="@+id/socialSpinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/darkThemeBackground">
+
+            <LinearLayout
+                android:id="@+id/socialLinearLayoutEmptyView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_group_white_24dp_disabled"/>
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/emptyView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/noUsers" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.jeofferson.onclas.PackageOthers.MyRecyclerView
+            android:id="@+id/socialMyRecyclerViewGeneralSearchList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/darkThemeSurface" />
+
+    </RelativeLayout>
+
+</LinearLayout>

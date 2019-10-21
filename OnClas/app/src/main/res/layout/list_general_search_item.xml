@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkThemeSurface"
+    android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/generalSearchItemCircleImageViewItemPicture"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/generalSearchItemTextViewItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/loading"
+            android:textColor="@color/darkTextSelected"
+            android:textSize="16sp"
+            android:layout_alignTop="@id/generalSearchItemCircleImageViewItemPicture"
+            android:layout_toRightOf="@id/generalSearchItemCircleImageViewItemPicture"
+            android:gravity="bottom"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/generalSearchItemTextViewFullType"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@id/generalSearchItemCircleImageViewItemPicture"
+            android:layout_toRightOf="@id/generalSearchItemCircleImageViewItemPicture"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:maxLines="1"
+            android:text="@string/loading"
+            android:textColor="@color/subFullName"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+</RelativeLayout>

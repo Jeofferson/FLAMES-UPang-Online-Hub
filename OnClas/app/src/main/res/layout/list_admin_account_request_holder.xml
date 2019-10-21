@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkThemeSurface"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/adminAccountRequestHolderCircleImageViewUserPicture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/adminAccountRequestHolderTextViewUserFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignTop="@id/adminAccountRequestHolderCircleImageViewUserPicture"
+            android:layout_toRightOf="@id/adminAccountRequestHolderCircleImageViewUserPicture"
+            android:text="@string/loading"
+            android:textColor="@color/darkTextSelected"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/adminAccountRequestHolderTextViewUserActionDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@id/adminAccountRequestHolderTextViewUserFullName"
+            android:layout_toRightOf="@id/adminAccountRequestHolderCircleImageViewUserPicture"
+            android:text="@string/loading"
+            android:textColor="@color/subFullName" />
+
+        <TextView
+            android:id="@+id/adminAccountRequestHolderTextViewAllowedDeclined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adminAccountRequestHolderTextViewUserActionDescription"
+            android:layout_toEndOf="@id/adminAccountRequestHolderCircleImageViewUserPicture"
+            android:layout_marginTop="8dp"
+            android:text="@string/loading"
+            android:textColor="@color/darkTextNormal"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/adminAccountRequestHolderButtonAllow"
+            style="@style/buttonNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toEndOf="@id/adminAccountRequestHolderCircleImageViewUserPicture"
+            android:layout_below="@id/adminAccountRequestHolderTextViewUserActionDescription"
+            android:text="@string/allow"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/adminAccountRequestHolderButtonDecline"
+            style="@style/buttonNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adminAccountRequestHolderTextViewUserActionDescription"
+            android:layout_toRightOf="@id/adminAccountRequestHolderButtonAllow"
+            android:text="@string/decline"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkThemeBackground"
+    tools:context=".PackageActivities.Updates">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/updatesCardViewWriteAComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkThemeSurface">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/studentForumCircleImageViewDisplayPosterPicture"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/placeholder" />
+
+                    <TextView
+                        android:id="@+id/studentForumTextViewDisplayPosterFullName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="56dp"
+                        android:layout_alignTop="@id/studentForumCircleImageViewDisplayPosterPicture"
+                        android:layout_toEndOf="@id/studentForumCircleImageViewDisplayPosterPicture"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="@string/loading"
+                        android:textColor="@color/darkTextSelected"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/studentForumImageViewEditPost"
+                        android:layout_alignParentEnd="true"
+                        android:padding="16dp"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_down_arrow"/>
+
+                    <TextView
+                        android:id="@+id/studentForumTextViewDisplayPosterFullType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_alignBottom="@id/studentForumCircleImageViewDisplayPosterPicture"
+                        android:layout_toEndOf="@id/studentForumCircleImageViewDisplayPosterPicture"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="@string/loading"
+                        android:textColor="@color/subFullName"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <ImageView
+                        android:id="@+id/dot"
+                        android:layout_width="4dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_toEndOf="@id/studentForumTextViewDisplayPosterFullType"
+                        android:layout_alignBottom="@id/studentForumCircleImageViewDisplayPosterPicture"
+                        android:src="@drawable/ic_circle_for_dates"/>
+
+                    <TextView
+                        android:id="@+id/studentForumTextViewDateCreated"
+                        android:layout_toEndOf="@id/dot"
+                        android:layout_alignBottom="@id/studentForumCircleImageViewDisplayPosterPicture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:gravity="center_vertical"
+                        android:textSize="12sp"
+                        android:textColor="@color/subFullName"
+                        android:text="@string/dateDefault"/>
+
+                    <TextView
+                        android:id="@+id/studentForumTextViewContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/studentForumCircleImageViewDisplayPosterPicture"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="@string/loading"
+                        android:textColor="@color/darkTextSelected"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/studentForumImageViewPostPicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/studentForumTextViewContent"
+                        android:layout_marginTop="8dp"
+                        android:adjustViewBounds="true"
+                        android:maxHeight="200dp"
+                        android:minHeight="160dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/placeholder" />
+
+                    <LinearLayout
+                        android:id="@+id/studentForumRelativeLayoutPostStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_below="@id/studentForumImageViewPostPicture">
+
+
+                        <ImageView
+                            android:id="@+id/studentForumButtonLike"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_like" />
+
+                        <TextView
+                            android:id="@+id/studentForumTextViewNumOfLikes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="16dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:padding="8dp"
+                            android:text="@string/loadingNumber"
+                            android:textColor="@color/darkTextSelected"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/studentForumTextViewNumOfComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/comments"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                android:textColor="@color/lightTextSelected"/>
+
+            <com.jeofferson.onclas.PackageOthers.MyRecyclerView
+                android:id="@+id/studentForumMyRecyclerViewComments"
+                android:background="@color/darkThemeBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_marginBottom="80dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/updatesCardViewWriteAComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/studentForumRelativeLayoutCommentPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/studentForumImageViewCommentPicture"
+                    android:layout_width="240dp"
+                    android:layout_height="160dp"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/placeholder"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:id="@+id/studentForumImageViewRemoveCommentPicture"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_alignEnd="@+id/studentForumImageViewCommentPicture"
+                    android:layout_alignTop="@+id/studentForumImageViewCommentPicture"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_close_white_24dp_clickable"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/studentForumCircleImageViewDisplayCommenterPicture"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/placeholder"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/studentForumEditTextCommentContent"
+                    android:layout_gravity="bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="2dp"
+                    android:textColorHint="@color/lightTextClickable"
+                    android:textSize="14sp"
+                    android:textColor="@color/lightTextSelected"
+                    android:hint="@string/writeAComment"
+                    android:theme="@style/MyThemeEditText"/>
+
+                <ImageView
+                    android:id="@+id/studentForumButtonAddCommentPicture"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/ic_add_to_photos_white_24dp_clickable"/>
+
+                <ProgressBar
+                    android:id="@+id/studentForumProgressBar"
+                    android:visibility="gone"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <ImageView
+                    android:id="@+id/studentForumButtonComment"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/ic_send_color_accent_24dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

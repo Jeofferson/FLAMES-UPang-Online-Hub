@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkThemeSurface"
+    tools:context=".PackageForms.AddUserPhoto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_toolbar"/>
+
+    <ImageView
+        android:id="@+id/addUserPhotoImageViewUserPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:minHeight="160dp"
+        android:maxHeight="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_add_image2"/>
+
+    <ImageView
+        android:id="@+id/addUserPhotoImageViewRemoveUserPhoto"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignEnd="@+id/addUserPhotoImageViewUserPhoto"
+        android:layout_alignTop="@+id/addUserPhotoImageViewUserPhoto"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_close_white_24dp_clickable"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/addUserPhotoProgressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addUserPhotoImageViewUserPhoto"
+        android:elevation="4dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/addUserPhotoTextViewErrorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/addUserPhotoProgressBar"
+        android:layout_marginTop="8dp"
+        android:text="@string/chooseAnImage"
+        android:textColor="@color/textErrorMessage"
+        android:visibility="gone"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

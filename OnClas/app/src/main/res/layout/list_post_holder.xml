@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkThemeSurface">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/postHolderCircleImageViewDisplayPosterPicture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/postHolderTextViewDisplayPosterFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignTop="@id/postHolderCircleImageViewDisplayPosterPicture"
+            android:layout_toEndOf="@id/postHolderCircleImageViewDisplayPosterPicture"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/loading"
+            android:textColor="@color/darkTextSelected"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/postHolderTextViewDisplayPosterFullType"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_alignBottom="@id/postHolderCircleImageViewDisplayPosterPicture"
+            android:layout_toEndOf="@id/postHolderCircleImageViewDisplayPosterPicture"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/loading"
+            android:textColor="@color/subFullName"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/dot"
+            android:layout_width="4dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@id/postHolderTextViewDisplayPosterFullType"
+            android:layout_alignBottom="@id/postHolderCircleImageViewDisplayPosterPicture"
+            android:src="@drawable/ic_circle_for_dates"/>
+
+        <TextView
+            android:id="@+id/postHolderTextViewDateCreated"
+            android:layout_toEndOf="@id/dot"
+            android:layout_alignBottom="@id/postHolderCircleImageViewDisplayPosterPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center_vertical"
+            android:textSize="12sp"
+            android:textColor="@color/subFullName"
+            android:text="@string/dateDefault"/>
+
+        <TextView
+            android:id="@+id/postHolderTextViewContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postHolderCircleImageViewDisplayPosterPicture"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="@string/loading"
+            android:textColor="@color/darkTextSelected"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/postHolderImageViewPostPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/postHolderTextViewContent"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:minHeight="160dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder" />
+
+        <LinearLayout
+            android:id="@+id/postHolderRelativeLayoutPostStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/postHolderImageViewPostPicture">
+
+
+            <ImageView
+                android:id="@+id/postHolderButtonLike"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_like" />
+
+            <TextView
+                android:id="@+id/postHolderTextViewNumOfLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="16dp"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:text="@string/loadingNumber"
+                android:textColor="@color/darkTextSelected"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/postHolderButtonComment"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_comment" />
+
+            <TextView
+                android:id="@+id/postHolderTextViewNumOfComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="16dp"
+                android:background="@android:color/transparent"
+                android:padding="8dp"
+                android:text="@string/loadingNumber"
+                android:textColor="@color/darkTextSelected"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

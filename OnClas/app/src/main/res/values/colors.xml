@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    default theme-->
+<!--    <color name="colorPrimary">#36474F</color>-->
+<!--    <color name="colorPrimaryDark">#1C2328</color>-->
+
+    <color name="colorPrimary">#272532</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4E4E</color>
+<!--    <color name="colorAccent">#FE674B</color>-->
+
+    <color name="universityColorPrimary">#3B4F26</color>
+
+    <color name="gradientStartColor">#FF4E4E</color>
+    <color name="gradientEndColor">#FDB047</color>
+
+    <color name="gradientStartColorTransparent">#60FF4E4E</color>
+    <color name="gradientEndColorTransparent">#60FDB047</color>
+
+    <color name="darkThemeBackground">#606977</color>
+
+    <color name="darkThemeSurface">#D1DCE2</color>
+    <color name="darkThemeSurface2">#BCC9D0</color>
+
+    <color name="subFullName">#5B5757</color>
+
+    <color name="translucentWhite1">#33FFFFFF</color>
+
+    <color name="translucentBlack1">#05000000</color>
+    <color name="translucentBlack2">#50000000</color>
+
+    <color name="lightTextSelected">#FFFFFF</color>
+    <color name="lightTextClickable">#87ffffff</color>
+    <color name="lightTextNormal">#60ffffff</color>
+    <color name="lightTextDisabled">#38ffffff</color>
+
+    <color name="darkTextSelected">#ff000000</color>
+    <color name="darkTextClickable">#87000000</color>
+    <color name="darkTextNormal">#60000000</color>
+    <color name="darkTextDisabled">#38000000</color>
+
+    <color name="lightIconSelected">#FFFFFF</color>
+    <color name="lightIconClickable">#87ffffff</color>
+    <color name="lightIconNormal">#70ffffff</color>
+    <color name="lightIconDisabled">#50ffffff</color>
+
+    <color name="textErrorMessage">#B00020</color>
+<!--    <color name="textErrorMessage">#FFA500</color>-->
+
+</resources>

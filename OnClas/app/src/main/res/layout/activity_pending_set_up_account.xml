@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkThemeBackground"
+    tools:context=".PackageActivities.PendingSetUpAccount">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_toolbar"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@color/darkThemeSurface">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/pendingSetUpAccountCircleImageViewUserPicture"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/placeholder" />
+
+            <TextView
+                android:id="@+id/pendingSetUpAccountTextViewUserFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/loading"
+                android:textColor="@color/darkTextSelected"
+                android:textSize="14sp"
+                android:layout_alignTop="@id/pendingSetUpAccountCircleImageViewUserPicture"
+                android:layout_toRightOf="@id/pendingSetUpAccountCircleImageViewUserPicture"
+                android:gravity="center_vertical"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pendingSetUpAccountTextViewUserFullType"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@id/pendingSetUpAccountCircleImageViewUserPicture"
+                android:layout_toRightOf="@id/pendingSetUpAccountCircleImageViewUserPicture"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/loading"
+                android:textColor="@color/subFullName"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/accountRequested"
+                android:textColor="@color/lightTextSelected"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                app:srcCompat="@drawable/ic_hourglass_empty_white_24dp_disabled" />
+
+            <TextView
+                android:id="@+id/pendingSetUpAccountTextViewUserWaitForConfirmation"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/waitForConfirmation"
+                android:textColor="@color/lightTextNormal"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

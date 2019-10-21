@@ -1,0 +1,217 @@
+<resources>
+
+    <string name="app_name">FLAMES</string>
+
+    <string name="universityName">PHINMA\nUniversity of Pangasinan</string>
+
+    <string name="paragraphDefault">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque cum dicta earum impedit incidunt ipsa, libero modi natus numquam porro rem ullam ut. Ab adipisci blanditiis ducimus impedit temporibus?</string>
+
+    <string name="email">\@jeofferson.com</string>
+    <string name="userMoodDefault">Feeling happy :)</string>
+    <string name="userBioDefault">This user didn\'t enter any bio yet.</string>
+
+    <string name="doWantToExit">Do you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="required">Required</string>
+
+    <string name="invalidUsernamePassword">Invalid username or password.</string>
+    <string name="passwordDoesntMatch">Password doesn\'t match.</string>
+    <string name="passwordTooShort">Password is too short.</string>
+    <string name="usernameAlreadyExists">Username already exists.</string>
+    <string name="checkInternetConnection">Error. Please check your internet connection or try again later.</string>
+
+    <string name="navigationDrawerOpen">Open Navigation Drawer</string>
+    <string name="navigationDrawerClose">Close Navigation Drawer</string>
+
+    <string name="appAboutDescription">FLAMES is a free app that connects students of PHINMA University of Pangasinan. Want to be updated with the latest announcements of the university? Want to know what\'s trending in the campus? Want to let other students know what you feel? FLAMES can do it all for you!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="logIn">Log In</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="createNewAccount">Create new account?</string>
+    <string name="alreadyHaveAccount">Already have an account?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="signUp">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="birthday">Birthday: </string>
+    <string name="gender">Gender: </string>
+    <string name="errorMessage">Error Message</string>
+    <string name="dateDefault">01/01/2000</string>
+    <string name="studentForum">Student Forum</string>
+    <string name="scUpdates">SC Updates</string>
+    <string name="newsfeed">Newsfeed</string>
+    <string name="announcements">Announcements</string>
+    <string name="activities">Activities</string>
+    <string name="study">Study</string>
+    <string name="learn">Learn</string>
+    <string name="teach">Teach</string>
+    <string name="social">Social</string>
+    <string name="notifications">Notifications</string>
+    <string name="messages">Messages</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="about">About</string>
+    <string name="developer">Developer</string>
+    <string name="logOut">Log Out</string>
+    <string name="loading">Loading</string>
+    <string name="createPost">Create Post</string>
+    <string name="enterPostContent">Enter post content&#8230;</string>
+    <string name="findPeople">Find People</string>
+    <string name="findSubjects">Find Subjects</string>
+    <string name="setUpAccount">Set Up Account</string>
+    <string name="selectDepartment">Select Department</string>
+    <string name="finish">Finish</string>
+    <string name="selectYear">Select Year</string>
+    <string name="selectGrade">Select Grade</string>
+    <string name="requestAccount">Request Account</string>
+    <string name="accountRequested">Your account has been requested!</string>
+    <string name="waitForConfirmation">Please wait for the confirmation from the admin or go back later.</string>
+    <string name="admin">Admin</string>
+    <string name="home">Home</string>
+    <string name="events">Events</string>
+    <string name="photos">Photos</string>
+    <string name="peopleWhoLiked">People Who Liked</string>
+    <string name="noReactions">No Reactions</string>
+    <string name="edit">Edit</string>
+    <string name="viewAll">View All</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="displayPicture">Display picture</string>
+    <string name="coverPhoto">Cover photo</string>
+    <string name="bio">Bio</string>
+    <string name="enterBio">Enter bio&#8230;</string>
+    <string name="done">Done</string>
+    <string name="comments">Comments</string>
+    <string name="writeAComment">Write a comment&#8230;</string>
+    <string name="writeAReply">Write a reply&#8230;</string>
+    <string name="people">People</string>
+    <string name="forum">Forum</string>
+    <string name="notif">Notif</string>
+    <string name="now">Now</string>
+    <string name="welcomeToApp">Welcome to my app</string>
+    <string name="addPhoto">Add Photo</string>
+    <string name="chooseAnImage">Oops! Choose an image first.</string>
+    <string name="noNewPhotos">No New Photos</string>
+    <string name="report">Report</string>
+    <string name="add">Add</string>
+    <string name="version">Version</string>
+    <string name="versionNumber">1.00.0.00.0</string>
+    <string name="lastUpdate">Last Update</string>
+    <string name="lastUpdateDate">September 2019</string>
+    <string name="developerFullName">Jeofferson O. Dela Peña</string>
+    <string name="tagLine">UPang Online Hub</string>
+    <string name="send">Send</string>
+    <string name="createMessage">Create Message</string>
+    <string name="enterMessageContent">Enter message content&#8230;</string>
+    <string name="noNewMessages">No New Messages</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="default_notification_channel_id">Jeofferson</string>
+    <string name="deletePhoto">Delete Photo</string>
+    <string name="confirmDeletePhotoMessage">Are you sure you want to delete this photo?</string>
+    <string name="upang">UPang</string>
+    <string name="updates">Updates</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signIn">Sign In</string>
+    <string name="learning">Learning</string>
+    <string name="teaching">Teaching</string>
+    <string name="loadingNumber">--</string>
+    <string name="liked">Liked</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="reply">Reply</string>
+    <string name="numOfLikesInitial">-- Likes</string>
+    <string name="numOfCommentsInitial">-- Comments</string>
+    <string name="numOfRepliesInitial">-- Replies</string>
+    <string name="moodWithExample">Title i.e. \" Hardworking Student \"</string>
+    <string name="numOfLikes">%1$d Likes</string>
+    <string name="numOfComment">%1$d Comment</string>
+    <string name="numOfComments">%1$d Comments</string>
+    <string name="numOfReply">%1$d Reply</string>
+    <string name="numOfReplies">%1$d Replies</string>
+    <string name="post">Post</string>
+    <string name="noNewPosts">No New Posts</string>
+    <string name="noNewBlogs">No New Blogs</string>
+    <string name="downloadFile">Download File</string>
+    <string name="loggingOut">Logging out&#8230;</string>
+    <string name="noNewAnnouncements">No New Announcements</string>
+    <string name="noNewActivities">No New Activities</string>
+    <string name="notFollowingAnyone">Not Following Anyone</string>
+    <string name="noNewFollowers">No New Followers</string>
+    <string name="noOtherUser">No Other User</string>
+    <string name="follow">Follow</string>
+    <string name="followGetStarted">Follow Other People to Get Started</string>
+    <string name="whenFollowOthers">You\'ll see other people\'s photos and updates when you follow them.</string>
+    <string name="teacher">Teacher</string>
+    <string name="scOfficer">SC Officer</string>
+    <string name="student">Student</string>
+    <string name="students">Students</string>
+    <string name="teachers">Teachers</string>
+    <string name="subjects">Subjects</string>
+    <string name="noUsers">No Users</string>
+    <string name="noNewNotifications">No New Notifications</string>
+    <string name="placeholderText">Placeholder Text</string>
+    <string name="editPost">Edit Post</string>
+    <string name="deletePost">Delete Post</string>
+    <string name="editComment">Edit Comment</string>
+    <string name="deleteComment">Delete Comment</string>
+    <string name="editReply">Edit Reply</string>
+    <string name="deleteReply">Delete Reply</string>
+    <string name="deletePostQuestionMark">Delete post?</string>
+    <string name="deleteCommentQuestionMark">Delete comment?</string>
+    <string name="deleteReplyQuestionMark">Delete reply?</string>
+    <string name="youCanEdit">You can edit it if you just need to change something.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="pleaseWait">Please Wait..</string>
+    <string name="deletingPost">Deleting post &#8230;</string>
+    <string name="deletingComment">Deleting comment &#8230;</string>
+    <string name="deletingReply">Deleting reply &#8230;</string>
+    <string name="deletingPhoto">Deleting photo &#8230;</string>
+    <string name="updatingProfile">Updating profile &#8230;</string>
+    <string name="oops">Oops!</string>
+    <string name="mayBeenDeleted">The post or comment may have been deleted already.</string>
+    <string name="ok">Ok</string>
+
+    <string name="noNewRequests">No New Requests</string>
+    <string name="allow">Allow</string>
+    <string name="decline">Decline</string>
+    <string name="processing">Processing&#8230;</string>
+    <string name="allowed">Allowed</string>
+    <string name="declined">Declined</string>
+    <string name="enterPostTitle">Write a title&#8230;</string>
+
+    <!--    For spinners:-->
+    <string-array name="postTypes">
+        <item>All Updates</item>
+        <item>Student Updates</item>
+        <item>School Updates</item>
+    </string-array>
+
+    <string-array name="userTypes">
+        <item>All Users</item>
+        <item>Students</item>
+        <item>SC Officers</item>
+        <item>Teachers</item>
+    </string-array>
+
+    <string-array name="departments">
+        <item>All Departments</item>
+        <item>SHS</item>
+        <item>CAS</item>
+        <item>CEA</item>
+        <item>CHS</item>
+        <item>CITE</item>
+        <item>CMA</item>
+        <item>CSS</item>
+    </string-array>
+
+</resources>

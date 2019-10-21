@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/announcementsNestedScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkThemeBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PackageBottomNavigationItems.Announcements">
+
+    <LinearLayout
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkThemeSurface">
+
+                <ImageView
+                    android:focusableInTouchMode="true"
+                    android:id="@+id/announcementsImageViewBgUPang"
+                    android:adjustViewBounds="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/placeholder" />
+
+                <ImageView
+                    android:id="@+id/announcementsCircleImageViewUPangDisplayPicture"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="8dp"
+                    android:layout_below="@id/announcementsImageViewBgUPang"
+                    android:src="@drawable/placeholder" />
+
+                <TextView
+                    android:id="@+id/userActivityTextViewUserFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignTop="@id/announcementsCircleImageViewUPangDisplayPicture"
+                    android:layout_alignBottom="@id/announcementsCircleImageViewUPangDisplayPicture"
+                    android:layout_toEndOf="@id/announcementsCircleImageViewUPangDisplayPicture"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/universityName"
+                    android:textColor="@color/darkTextSelected"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <Button
+                    android:background="@drawable/button_color_primary_radius_8dp"
+                    android:id="@+id/userActivityTextViewUserBioEdit"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/userActivityTextViewUserFullName"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:text="@string/editProfile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/lightTextSelected"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/darkThemeSurface">
+
+                <TextView
+                    android:id="@+id/userActivityTextViewPhotos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkTextSelected"
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/photos"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false">
+
+                    <RelativeLayout
+                        android:id="@+id/announcementsRelativeLayoutEmptyView"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="64dp"
+                            android:layout_marginEnd="64dp"
+                            android:textColor="@color/darkTextNormal"
+                            android:textSize="16sp"
+                            android:text="@string/noNewPhotos"/>
+
+                    </RelativeLayout>
+
+                    <com.jeofferson.onclas.PackageOthers.MyRecyclerView
+                        android:id="@+id/announcementsMyRecyclerViewUserPhotos"
+                        android:paddingEnd="8dp"
+                        android:clipToPadding="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/announcementsTextViewViewAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="@color/darkTextSelected"
+                    android:textSize="20sp"
+                    android:text="@string/viewAll"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:id="@+id/announcementsLinearLayoutEmptyView"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/emptyView"
+                    android:layout_margin="32dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noNewPosts"/>
+
+            </LinearLayout>
+
+            <com.jeofferson.onclas.PackageOthers.MyRecyclerView
+                android:id="@+id/announcementsMyRecyclerViewNewsfeed"
+                android:background="@color/darkThemeBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

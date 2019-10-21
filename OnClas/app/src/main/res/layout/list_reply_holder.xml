@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/darkThemeSurface2"
+    android:layout_marginBottom="2dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/replyHolderCircleImageViewDisplayReplierPicture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/replyHolderTextViewDisplayReplierFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="56dp"
+        android:layout_alignTop="@id/replyHolderCircleImageViewDisplayReplierPicture"
+        android:layout_toEndOf="@id/replyHolderCircleImageViewDisplayReplierPicture"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="@string/loading"
+        android:textColor="@color/darkTextSelected"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/replyHolderImageViewEditReply"
+        android:layout_alignParentEnd="true"
+        android:padding="16dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_down_arrow"/>
+
+    <TextView
+        android:id="@+id/replyHolderTextViewDisplayReplierFullType"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_alignBottom="@id/replyHolderCircleImageViewDisplayReplierPicture"
+        android:layout_toEndOf="@id/replyHolderCircleImageViewDisplayReplierPicture"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="@string/loading"
+        android:textColor="@color/subFullName"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/dot"
+        android:layout_width="4dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toEndOf="@id/replyHolderTextViewDisplayReplierFullType"
+        android:layout_alignBottom="@id/replyHolderCircleImageViewDisplayReplierPicture"
+        android:src="@drawable/ic_circle_for_dates"/>
+
+    <TextView
+        android:id="@+id/replyHolderTextViewDateCreated"
+        android:layout_toEndOf="@id/dot"
+        android:layout_alignBottom="@id/replyHolderCircleImageViewDisplayReplierPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        android:textColor="@color/subFullName"
+        android:text="@string/dateDefault"/>
+
+    <TextView
+        android:id="@+id/replyHolderTextViewContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/replyHolderCircleImageViewDisplayReplierPicture"
+        android:layout_below="@id/replyHolderCircleImageViewDisplayReplierPicture"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="@string/loading"
+        android:textColor="@color/darkTextSelected"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/replyHolderImageViewReplyPicture"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:layout_below="@id/replyHolderTextViewContent"
+        android:layout_toEndOf="@id/replyHolderCircleImageViewDisplayReplierPicture"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:minHeight="160dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder" />
+
+    <LinearLayout
+        android:id="@+id/replyHolderRelativeLayoutReplyStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@id/replyHolderCircleImageViewDisplayReplierPicture"
+        android:layout_below="@id/replyHolderImageViewReplyPicture">
+
+
+        <ImageView
+            android:id="@+id/replyHolderButtonLike"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_like" />
+
+        <TextView
+            android:id="@+id/replyHolderTextViewNumOfLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:background="@android:color/transparent"
+            android:padding="8dp"
+            android:text="@string/loadingNumber"
+            android:textColor="@color/darkTextSelected"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuBottomNavigationViewMessages"
+        android:title="@string/upang"
+        android:icon="@drawable/ic_news"/>
+    <item android:id="@+id/menuBottomNavigationViewHome"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/menuBottomNavigationViewExtra"
+        android:checkable="false"
+        android:enabled="false"
+        android:icon="@drawable/ic_add_box_black_24dp_extra"
+        android:title="" />
+    <item android:id="@+id/menuBottomNavigationViewSocial"
+        android:title="@string/people"
+        android:icon="@drawable/ic_people"/>
+    <item android:id="@+id/menuBottomNavigationViewNotifications"
+        android:title="@string/notif"
+        android:icon="@drawable/ic_notification"/>
+
+</menu>

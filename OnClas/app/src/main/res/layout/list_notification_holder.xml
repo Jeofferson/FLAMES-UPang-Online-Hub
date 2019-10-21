@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkThemeSurface"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/notificationHolderCircleImageViewFromPicture"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/notificationHolderTextViewNotificationContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/notificationHolderCircleImageViewFromPicture"
+        android:layout_toEndOf="@id/notificationHolderCircleImageViewFromPicture"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/loading"
+        android:textColor="@color/darkTextSelected"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/notificationHolderTextViewDateCreated"
+        android:layout_toEndOf="@id/notificationHolderCircleImageViewFromPicture"
+        android:layout_below="@id/notificationHolderTextViewNotificationContent"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        android:textColor="@color/subFullName"
+        android:text="@string/dateDefault"/>
+
+</RelativeLayout>

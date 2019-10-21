@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkThemeBackground"
+    tools:context=".PackageActivities.UserActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/darkThemeSurface">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/userActivityCardViewUserCover"
+                        app:cardElevation="0dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="@color/darkThemeSurface"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/userActivityImageViewUserCover"
+                            android:layout_width="match_parent"
+                            android:layout_height="240dp"
+                            android:layout_marginBottom="16dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/placeholder" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userActivityCircleImageViewUserPicture"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_below="@id/userActivityCardViewUserCover"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-120dp"
+                        app:civ_border_width="8dp"
+                        app:civ_border_color="@color/darkThemeSurface"
+                        android:src="@drawable/placeholder" />
+
+                    <TextView
+                        android:id="@+id/userActivityTextViewUserFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/userActivityCircleImageViewUserPicture"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/loading"
+                        android:textColor="@color/darkTextSelected"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/userActivityTextViewFullType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/userActivityTextViewUserFullName"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/loading"
+                        android:textColor="@color/darkTextSelected"
+                        android:textSize="20sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/userActivityTextViewUserBio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/userActivityTextViewFullType"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/loading"
+                        android:textColor="@color/darkTextSelected"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:background="@drawable/button_color_primary_radius_8dp"
+                        android:id="@+id/userActivityTextViewUserBioEdit"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@id/userActivityTextViewUserBio"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center"
+                        android:text="@string/editProfile"
+                        android:textAllCaps="false"
+                        android:textColor="@color/lightTextSelected"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/darkThemeSurface">
+
+                    <TextView
+                        android:id="@+id/userActivityTextViewPhotos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/darkTextSelected"
+                        android:textSize="20sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:text="@string/photos"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false">
+
+                        <RelativeLayout
+                            android:id="@+id/userActivityRelativeLayoutEmptyView"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="64dp"
+                                android:layout_marginEnd="64dp"
+                                android:textColor="@color/darkTextNormal"
+                                android:textSize="16sp"
+                                android:text="@string/noNewPhotos"/>
+
+                        </RelativeLayout>
+
+                        <com.jeofferson.onclas.PackageOthers.MyRecyclerView
+                            android:id="@+id/userActivityMyRecyclerViewUserPhotos"
+                            android:paddingEnd="8dp"
+                            android:clipToPadding="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/userActivityTextViewViewAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/darkTextSelected"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/viewAll"/>
+
+            </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:id="@+id/userActivityLinearLayoutEmptyView"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/emptyView"
+                        android:layout_margin="32dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/noNewPosts"/>
+
+                </LinearLayout>
+
+                <com.jeofferson.onclas.PackageOthers.MyRecyclerView
+                    android:id="@+id/userActivityMyRecyclerViewNewsfeed"
+                    android:background="@color/darkThemeBackground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

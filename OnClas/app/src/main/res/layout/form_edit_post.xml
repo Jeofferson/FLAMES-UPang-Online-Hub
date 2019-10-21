@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".PackageForms.EditPost">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_toolbar" />
+
+    <ProgressBar
+        android:id="@+id/editPostProgressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:elevation="4dp"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@color/darkThemeSurface">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/editPostCircleImageViewDisplayPosterPicture"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/placeholder" />
+
+            <TextView
+                android:id="@+id/editPostTextViewDisplayPosterFullName"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignTop="@id/editPostCircleImageViewDisplayPosterPicture"
+                android:layout_toRightOf="@id/editPostCircleImageViewDisplayPosterPicture"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/loading"
+                android:textColor="@color/darkTextSelected"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/editPostTextViewDisplayPosterFullType"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@id/editPostCircleImageViewDisplayPosterPicture"
+                android:layout_toRightOf="@id/editPostCircleImageViewDisplayPosterPicture"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/loading"
+                android:textColor="@color/subFullName"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/editPostImageViewPostPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editPostCircleImageViewDisplayPosterPicture"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="200dp"
+                android:minHeight="160dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/placeholder_add_image2" />
+
+            <ImageView
+                android:id="@+id/editPostImageViewRemovePostPicture"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_alignEnd="@+id/editPostImageViewPostPicture"
+                android:layout_alignTop="@+id/editPostImageViewPostPicture"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_close_white_24dp_clickable"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/editPostEditTextPostContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editPostImageViewPostPicture"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="@string/enterMessageContent"
+                android:inputType="textMultiLine"
+                android:textColor="@color/darkTextSelected"
+                android:textColorHint="@color/darkTextClickable"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
