@@ -1,3 +1,3 @@
 # FLAMES-UPang-Online-Hub
 
-![](images/2.jpg)
+<img src="images/2.jpg" width="100">
